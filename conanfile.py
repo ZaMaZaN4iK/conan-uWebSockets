@@ -3,7 +3,7 @@ from conans import ConanFile, CMake, tools
 
 class uWebSocketsConan(ConanFile):
     name = "uWebSockets"
-    version = "0.15.0"
+    version = "0.13.0"
     license = "BSD 3-clause \"New\" or \"Revised\" License"
     license_url = "https://raw.githubusercontent.com/uNetworking/uWebSockets/master/LICENSE"
     url = "https://github.com/kwallner/uWebSockets.git"
@@ -11,7 +11,7 @@ class uWebSocketsConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
     repository = "https://github.com/kwallner/uWebSockets.git"
-    branch = "develop"
+    branch = "develop-v0.13"
     no_copy_source = True
     
     def requirements(self):
