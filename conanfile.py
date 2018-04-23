@@ -13,12 +13,12 @@ class uWebSocketsConan(ConanFile):
     repository = "https://github.com/kwallner/uWebSockets.git"
     branch = "develop-v0.13"
     no_copy_source = True
-    
+
     def requirements(self):
-        self.requires("Boost/1.65.1@%s/%s" % ("kwallner", "testing"))
+        self.requires("boost/1.67.0@%s/%s" % ("kwallner", "testing"))
         self.requires("libuv/1.15.0@%s/%s" % ("kwallner", "testing"))
         self.requires("zlib/1.2.11@%s/%s" % ("kwallner", "testing"))
-        self.requires("OpenSSL/1.0.2m@%s/%s" % ("kwallner", "testing"))
+        self.requires("OpenSSL/1.0.2o@%s/%s" % ("kwallner", "testing"))
 
     def config(self):
         if self.settings.compiler != "Visual Studio":
